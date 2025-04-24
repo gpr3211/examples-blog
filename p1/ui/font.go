@@ -30,6 +30,15 @@ func LoadFont(name string, assets embed.FS) (*text.GoTextFaceSource, error) {
 	return s, nil
 }
 
+func ToggleFont() {
+	if currFont == DejaVuSans {
+		currFont = ThaleahFat
+	} else {
+		currFont = DejaVuSans
+	}
+	return
+}
+
 func init() {
 
 	fmt.Println("Loading fonts")

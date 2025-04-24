@@ -21,7 +21,6 @@ type Text struct {
 
 var ColorWhite = color.RGBA{255, 255, 255, 0}
 
-
 func NewText(str string, x, y int, size FontSize, c color.RGBA) *Text {
 	return &Text{
 		content: str,
@@ -35,6 +34,12 @@ func NewText(str string, x, y int, size FontSize, c color.RGBA) *Text {
 func (g *Text) ChangeText(str string) {
 	g.content = str
 	g.Update()
+}
+
+func (t *Text) Move(x, y int) {
+	t.x = x
+	t.y = y
+	t.Update()
 
 }
 func (g *Text) Resize(size FontSize) error {
