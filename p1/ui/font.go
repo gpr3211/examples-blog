@@ -47,7 +47,13 @@ func init() {
 		log.Println("Failed to load font")
 		panic(err)
 	}
+	dj, err := LoadFont("DejaVuSans", fontAssets)
+	if err != nil {
+		log.Println("Failed to load font")
+		panic(err)
+	}
 	ThaleahFat = tf
+	DejaVuSans = dj
 
 	currFont = ThaleahFat
 	fmt.Println("Font loaded")
