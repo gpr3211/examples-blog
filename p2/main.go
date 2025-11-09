@@ -2,8 +2,8 @@ package main
 
 import (
 	"log"
-	"p2/ui"
 
+	"github.com/gpr3211/examples-blog/p2/ui"
 	"github.com/hajimehoshi/ebiten/v2"
 )
 

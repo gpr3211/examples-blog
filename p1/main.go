@@ -2,7 +2,8 @@ package main
 
 import (
 	"log"
-	"p1-example/ui" //TODO: our own package change p1-example to ur own mod name.
+
+	"github.com/gpr3211/examples-blog/p1/ui"
 	"github.com/hajimehoshi/ebiten/v2"
 )
 
